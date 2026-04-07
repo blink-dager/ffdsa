@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arduino Challenge Tajikistan 2026</title>
+<title>Arduino Challenge Tajikistan 2026 | STEMS.KZ</title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -38,25 +38,22 @@
     background: #fff;
     border-bottom: 2px solid var(--orange);
     padding: 0 2rem;
-    height: 64px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   }
 
-  .nav-left { display: flex; align-items: center; gap: 1rem; }
+  .nav-left { display: flex; align-items: center; gap: 1.5rem; }
 
-  .nav-logo {
-    width: 36px; height: 36px;
-    background: var(--orange);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.65rem; font-weight: 600;
-    color: white; letter-spacing: -0.05em;
+  .nav-logo-img {
+    height: 32px; /* Уменьшено по запросу */
+    width: auto;
+    object-fit: contain;
   }
 
-  .nav-title { font-size: 0.9rem; font-weight: 700; color: var(--text); }
+  .nav-title { font-size: 0.95rem; font-weight: 700; color: var(--text); border-left: 1px solid var(--border); padding-left: 1.5rem; }
   .nav-title span { color: var(--orange); }
 
   .nav-right { display: flex; gap: 0.75rem; align-items: center; }
@@ -71,7 +68,7 @@
 
   /* HERO */
   .hero {
-    padding: 120px 2rem 80px;
+    padding: 140px 2rem 80px;
     background: var(--bg2);
     border-bottom: 1px solid var(--border);
     position: relative; overflow: hidden;
@@ -124,7 +121,7 @@
   .hero h1 em { font-style: normal; color: var(--orange); }
 
   .hero-desc {
-    font-size: 1rem; color: var(--muted);
+    font-size: 1.1rem; color: var(--muted);
     line-height: 1.75; max-width: 520px;
     margin-bottom: 2.5rem; font-weight: 300;
   }
@@ -157,7 +154,7 @@
     background: white;
     border: 1px solid var(--border-strong);
     border-radius: 8px; padding: 2rem;
-    min-width: 220px;
+    min-width: 250px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.06);
   }
 
@@ -197,7 +194,7 @@
   .stat-item:last-child { border-right: none; }
 
   .stat-num {
-    font-size: 2rem; font-weight: 700;
+    font-size: 2.2rem; font-weight: 700;
     color: white; display: block;
   }
 
@@ -208,69 +205,72 @@
   }
 
   /* SECTIONS */
-  section { padding: 5rem 2rem; }
+  section { padding: 6rem 2rem; }
   .container { max-width: 1100px; margin: 0 auto; }
 
   .eyebrow {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.65rem; color: var(--orange);
+    font-size: 0.7rem; color: var(--orange);
     letter-spacing: 0.2em; text-transform: uppercase;
     margin-bottom: 0.75rem;
+    font-weight: 600;
   }
 
   .sec-title {
     font-size: clamp(1.75rem, 3.5vw, 2.5rem);
     font-weight: 700; line-height: 1.15;
-    color: var(--text); margin-bottom: 2.5rem;
+    color: var(--text); margin-bottom: 3rem;
   }
   .sec-title span { color: var(--orange); }
 
-  /* ABOUT */
+  /* ABOUT / CRITERIA */
   .about-grid {
-    display: grid; grid-template-columns: 1fr 1fr;
+    display: grid; grid-template-columns: 1fr 1.2fr;
     gap: 4rem; align-items: start;
   }
 
   .about-text p {
     color: var(--muted); line-height: 1.8;
-    font-size: 0.975rem; margin-bottom: 1rem;
+    font-size: 1rem; margin-bottom: 1.5rem;
   }
 
   .highlight-box {
     background: var(--blue-light);
-    border-left: 3px solid var(--blue);
-    padding: 1rem 1.25rem;
+    border-left: 4px solid var(--blue);
+    padding: 1.5rem;
     border-radius: 0 4px 4px 0;
-    margin-top: 1.5rem;
-    font-size: 0.875rem; color: var(--blue-dark); line-height: 1.6;
-    font-style: italic;
+    margin-top: 2rem;
+    font-size: 0.9rem; color: var(--blue-dark); line-height: 1.6;
+    font-weight: 500;
   }
 
   .criteria-grid {
     display: grid; grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1.25rem;
   }
 
   .criteria-card {
-    background: var(--bg2);
+    background: white;
     border: 1px solid var(--border);
-    border-radius: 6px; padding: 1.5rem;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    border-radius: 8px; padding: 1.75rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
   }
   .criteria-card:hover {
     border-color: var(--orange);
-    box-shadow: 0 4px 16px rgba(232,121,42,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(232,121,42,0.08);
   }
 
   .c-num {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.65rem; color: var(--orange);
-    font-weight: 600; margin-bottom: 0.75rem; letter-spacing: 0.1em;
+    font-weight: 600; margin-bottom: 1rem; letter-spacing: 0.1em;
   }
 
-  .c-icon { font-size: 1.4rem; margin-bottom: 0.6rem; }
-  .c-title { font-weight: 700; font-size: 0.9rem; color: var(--text); margin-bottom: 0.4rem; }
-  .c-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+  .c-icon { font-size: 1.8rem; margin-bottom: 0.8rem; display: block; }
+  .c-title { font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 0.6rem; }
+  .c-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
 
   /* PRIZES */
   .prizes-section { background: var(--bg2); }
@@ -283,38 +283,40 @@
   .prize-card {
     background: white;
     border: 1px solid var(--border);
-    border-radius: 8px; padding: 2rem;
+    border-radius: 8px; padding: 2.5rem 2rem;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
   }
   .prize-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
-  .prize-card.first { border-top: 3px solid #f59e0b; }
-  .prize-card.second { border-top: 3px solid #9ca3af; }
-  .prize-card.third { border-top: 3px solid #d97706; }
+  .prize-card.first { border-top: 4px solid #f59e0b; }
+  .prize-card.second { border-top: 4px solid #9ca3af; }
+  .prize-card.third { border-top: 4px solid #d97706; }
 
-  .p-medal { font-size: 2.5rem; margin-bottom: 0.75rem; }
+  .p-medal { font-size: 3rem; margin-bottom: 1rem; }
   .p-place {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.65rem; font-weight: 600;
+    font-size: 0.7rem; font-weight: 600;
     letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--muted); margin-bottom: 1rem;
+    color: var(--muted); margin-bottom: 1.25rem;
   }
-  .p-title { font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 0.5rem; line-height: 1.4; }
-  .p-sub { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+  .p-title { font-weight: 700; font-size: 1.15rem; color: var(--text); margin-bottom: 0.75rem; line-height: 1.3; }
+  .p-sub { font-size: 0.9rem; color: var(--muted); line-height: 1.6; margin-bottom: 1.5rem; }
   .p-tag {
-    display: inline-block; margin-top: 1rem;
+    display: inline-block;
     background: var(--orange-light); color: var(--orange-dark);
-    font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem;
-    padding: 0.25rem 0.6rem; border-radius: 3px; letter-spacing: 0.08em;
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem;
+    padding: 0.35rem 0.75rem; border-radius: 4px; letter-spacing: 0.05em;
+    font-weight: 600;
   }
 
   /* TIMELINE */
   .tl-wrap {
-    border: 1px solid var(--border); border-radius: 8px; overflow: hidden;
+    border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
   }
 
   .tl-item {
-    display: grid; grid-template-columns: 140px 1fr;
+    display: grid; grid-template-columns: 160px 1fr;
     border-bottom: 1px solid var(--border);
     transition: background 0.2s;
   }
@@ -322,21 +324,21 @@
   .tl-item:hover { background: var(--bg2); }
 
   .tl-date {
-    padding: 1.5rem; background: var(--blue);
+    padding: 2rem; background: var(--blue);
     display: flex; flex-direction: column;
     justify-content: center; align-items: center; text-align: center;
   }
 
-  .tl-day { font-size: 2rem; font-weight: 700; color: white; line-height: 1; }
+  .tl-day { font-size: 2.2rem; font-weight: 700; color: white; line-height: 1; }
   .tl-month {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.65rem; color: rgba(255,255,255,0.7);
-    letter-spacing: 0.15em; text-transform: uppercase; margin-top: 0.2rem;
+    font-size: 0.7rem; color: rgba(255,255,255,0.8);
+    letter-spacing: 0.15em; text-transform: uppercase; margin-top: 0.4rem;
   }
 
-  .tl-body { padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; }
-  .tl-title { font-weight: 700; font-size: 0.975rem; color: var(--text); margin-bottom: 0.4rem; }
-  .tl-desc { font-size: 0.825rem; color: var(--muted); line-height: 1.6; }
+  .tl-body { padding: 2rem; display: flex; flex-direction: column; justify-content: center; }
+  .tl-title { font-weight: 700; font-size: 1.1rem; color: var(--text); margin-bottom: 0.5rem; }
+  .tl-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
 
   /* STEPS */
   .steps-section { background: var(--bg2); }
@@ -348,99 +350,107 @@
 
   .step-card {
     background: white; border: 1px solid var(--border);
-    border-radius: 6px; padding: 1.75rem 1.5rem;
+    border-radius: 8px; padding: 2rem 1.75rem;
+    position: relative;
   }
 
   .s-num {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 1.75rem; font-weight: 600;
-    color: var(--orange); line-height: 1; margin-bottom: 1rem;
+    font-size: 2rem; font-weight: 700;
+    color: var(--orange); opacity: 0.3; line-height: 1; margin-bottom: 1rem;
   }
-  .s-title { font-weight: 700; font-size: 0.9rem; color: var(--text); margin-bottom: 0.5rem; }
-  .s-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+  .s-title { font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 0.75rem; }
+  .s-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
 
   /* FORM */
   .form-layout {
-    display: grid; grid-template-columns: 260px 1fr;
-    gap: 3rem; align-items: start;
+    display: grid; grid-template-columns: 300px 1fr;
+    gap: 4rem; align-items: start;
   }
 
-  .sidebar-title { font-weight: 700; font-size: 0.9rem; color: var(--text); margin-bottom: 1rem; }
+  .sidebar-title { font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 1.5rem; }
 
-  .checklist { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 2rem; }
+  .checklist { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2.5rem; }
   .checklist li {
-    display: flex; align-items: flex-start; gap: 0.6rem;
-    font-size: 0.825rem; color: var(--muted); line-height: 1.5;
+    display: flex; align-items: flex-start; gap: 0.75rem;
+    font-size: 0.9rem; color: var(--muted); line-height: 1.5;
   }
-  .checklist li::before { content: '✓'; color: var(--orange); font-weight: 700; flex-shrink: 0; margin-top: 0.1rem; }
+  .checklist li::before { content: '✓'; color: var(--orange); font-weight: 700; flex-shrink: 0; }
 
   .deadline-box {
     background: var(--orange-light);
     border: 1px solid rgba(232,121,42,0.25);
-    border-radius: 6px; padding: 1.25rem;
+    border-radius: 8px; padding: 1.5rem;
   }
   .dl-label {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.6rem; color: var(--orange-dark);
-    letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.4rem;
+    font-size: 0.65rem; color: var(--orange-dark);
+    letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem;
   }
-  .dl-date { font-size: 1.4rem; font-weight: 700; color: var(--orange); }
-  .dl-sub { font-size: 0.75rem; color: var(--orange-dark); margin-top: 0.25rem; }
+  .dl-date { font-size: 1.6rem; font-weight: 700; color: var(--orange); }
+  .dl-sub { font-size: 0.8rem; color: var(--orange-dark); margin-top: 0.3rem; }
 
-  .gform-box { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .gform-box { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
 
   .gform-bar {
     background: var(--bg2); border-bottom: 1px solid var(--border);
-    padding: 0.875rem 1.25rem;
+    padding: 1rem 1.5rem;
     display: flex; align-items: center; justify-content: space-between;
   }
   .gform-bar-left {
-    display: flex; align-items: center; gap: 0.6rem;
-    font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; color: var(--muted);
+    display: flex; align-items: center; gap: 0.75rem;
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--muted);
   }
-  .gform-dot { width: 8px; height: 8px; background: #22c55e; border-radius: 50%; }
+  .gform-dot { width: 10px; height: 10px; background: #22c55e; border-radius: 50%; }
   .gform-bar-right {
-    font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; color: var(--muted);
   }
 
   .gform-box iframe { display: block; width: 100%; min-height: 820px; border: none; }
 
   /* FOOTER */
-  footer { background: var(--text); color: rgba(255,255,255,0.6); padding: 3rem 2rem; }
+  footer { background: var(--text); color: rgba(255,255,255,0.6); padding: 4rem 2rem; }
 
   .footer-inner {
     max-width: 1100px; margin: 0 auto;
-    display: grid; grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem; align-items: start;
+    display: grid; grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 4rem; align-items: start;
   }
 
-  .f-logo { font-size: 1.1rem; font-weight: 700; color: white; margin-bottom: 0.5rem; }
-  .f-logo span { color: var(--orange); }
-  .f-tagline { font-size: 0.8rem; line-height: 1.6; color: rgba(255,255,255,0.5); }
+  .f-logo-wrap { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+  .f-logo-img { height: 28px; filter: brightness(0) invert(1); } /* Уменьшено по запросу */
+  .f-title { font-size: 1.2rem; font-weight: 700; color: white; }
+  .f-title span { color: var(--orange); }
+  .f-tagline { font-size: 0.85rem; line-height: 1.7; color: rgba(255,255,255,0.5); }
 
   .f-col h4 {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.65rem; letter-spacing: 0.15em;
-    text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 0.75rem;
+    font-size: 0.7rem; letter-spacing: 0.15em;
+    text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1.25rem;
   }
-  .f-col p { font-size: 0.8rem; line-height: 1.8; color: rgba(255,255,255,0.55); }
+  .f-col p { font-size: 0.85rem; line-height: 1.8; color: rgba(255,255,255,0.6); }
 
   /* RESPONSIVE */
   @media (max-width: 900px) {
-    .hero-inner { grid-template-columns: 1fr; }
+    .hero-inner { grid-template-columns: 1fr; text-align: center; }
+    .hero-desc { margin: 0 auto 2.5rem; }
+    .hero-actions { justify-content: center; }
     .hero-card { display: none; }
-    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .about-grid { grid-template-columns: 1fr; gap: 3rem; }
     .prizes-grid { grid-template-columns: 1fr; }
     .steps-grid { grid-template-columns: repeat(2, 1fr); }
     .form-layout { grid-template-columns: 1fr; }
-    .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
-    .stats-inner { grid-template-columns: repeat(2, 1fr); }
+    .footer-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+    .stat-item:nth-child(2) { border-right: none; }
   }
   @media (max-width: 600px) {
     .criteria-grid { grid-template-columns: 1fr; }
     .steps-grid { grid-template-columns: 1fr; }
-    .tl-item { grid-template-columns: 90px 1fr; }
+    .tl-item { grid-template-columns: 100px 1fr; }
     .nav-right { display: none; }
+    .nav-title { display: none; }
+    nav { justify-content: center; }
   }
 </style>
 </head>
@@ -448,12 +458,12 @@
 
 <nav>
   <div class="nav-left">
-    <div class="nav-logo">ARD</div>
+    <img src="https://stems.kz/wp-content/uploads/2025/05/logo.png" alt="STEMS Logo" class="nav-logo-img">
     <div class="nav-title">Arduino Challenge <span>Tajikistan</span></div>
   </div>
   <div class="nav-right">
-    <span class="nav-tag blue">UNESCO / EU</span>
-    <span class="nav-tag orange">2026</span>
+    <span class="nav-tag blue">STEMS.KZ</span>
+    <span class="nav-tag orange">ПРЕЗЕНТАЦИЯ 2026</span>
   </div>
 </nav>
 
@@ -461,19 +471,19 @@
 <div class="hero">
   <div class="hero-inner">
     <div>
-      <div class="hero-badge">Приём заявок открыт с 1 мая</div>
-      <h1>Создавай<br>будущее <em>своими<br>руками</em></h1>
-      <p class="hero-desc">Национальный конкурс по робототехнике и программированию среди 45 пилотных школ Таджикистана. Покажи, на что способен твой Arduino Starter Kit.</p>
+      <div class="hero-badge">Регистрация открыта с 1 мая</div>
+      <h1>Создавайте<br>будущее <em>своим<br>интеллектом</em></h1>
+      <p class="hero-desc">Приглашаем Вас принять участие в главном техническом вызове года. Используйте Ваш потенциал и возможности Arduino для создания инновационных решений.</p>
       <div class="hero-actions">
-        <a href="#form" class="btn-orange">Подать заявку →</a>
-        <a href="#about" class="btn-blue">О конкурсе</a>
+        <a href="#form" class="btn-orange">Подайте заявку сейчас →</a>
+        <a href="#about" class="btn-blue">Ознакомьтесь с регламентом</a>
       </div>
     </div>
     <div class="hero-card">
-      <div class="hero-card-label">// Важные даты</div>
-      <div class="hdi"><div class="hdi-date">1 МАЯ</div><div class="hdi-label">Открытие приёма заявок</div></div>
-      <div class="hdi"><div class="hdi-date">15 МАЯ</div><div class="hdi-label">Дедлайн подачи работ</div></div>
-      <div class="hdi"><div class="hdi-date">1 ИЮНЯ</div><div class="hdi-label">Награждение победителей</div></div>
+      <div class="hero-card-label">// Календарь событий</div>
+      <div class="hdi"><div class="hdi-date">01.05</div><div class="hdi-label">Начало приема работ</div></div>
+      <div class="hdi"><div class="hdi-date">15.05</div><div class="hdi-label">Окончание приема работ</div></div>
+      <div class="hdi"><div class="hdi-date">01.06</div><div class="hdi-label">Церемония награждения</div></div>
     </div>
   </div>
 </div>
@@ -482,8 +492,8 @@
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat-item"><span class="stat-num">45</span><span class="stat-label">Школ-участниц</span></div>
-    <div class="stat-item"><span class="stat-num">4</span><span class="stat-label">Критерия оценки</span></div>
-    <div class="stat-item"><span class="stat-num">15.05</span><span class="stat-label">Дедлайн</span></div>
+    <div class="stat-item"><span class="stat-num">4</span><span class="stat-label">Критерия отбора</span></div>
+    <div class="stat-item"><span class="stat-num">100%</span><span class="stat-label">Практики</span></div>
     <div class="stat-item"><span class="stat-num">3</span><span class="stat-label">Призовых места</span></div>
   </div>
 </div>
@@ -493,19 +503,39 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-text">
-        <div class="eyebrow">О конкурсе</div>
-        <h2 class="sec-title">Технологии —<br>ключ к <span>развитию</span></h2>
-        <p>Мы верим, что технологии открывают двери к новым возможностям. Наша цель — поддержать талантливых учеников из 45 пилотных школ Таджикистана, предоставив им платформу для реализации инженерных идей и развития STEM-навыков.</p>
-        <p>Конкурс проводится в рамках проекта ЮНЕСКО при финансовой поддержке Европейского Союза.</p>
-        <div class="highlight-box">«Укрепление среднего, профессионального и технического образования и подготовки учителей в области STEM через компетентностный подход и применение ИКТ в Таджикистане»</div>
+        <div class="eyebrow">Миссия проекта</div>
+        <h2 class="sec-title">Конкурс <span>Arduino Challenge</span></h2>
+        <p>Мы создаем условия, в которых Ваши идеи превращаются в работающие прототипы. Наша цель — развитие у учащихся инженерного мышления, навыков программирования и компетенций в области STEM.</p>
+        <p>Конкурс объединяет сильнейшие таланты 45 пилотных школ Республики Таджикистан для совместного созидания технологического будущего.</p>
+        <div class="highlight-box">«Инновации — это Ваша возможность применить современные технологии для решения актуальных задач региона».</div>
       </div>
       <div>
-        <div class="eyebrow">Критерии оценки</div>
+        <div class="eyebrow">Критерии оценки проектов</div>
         <div class="criteria-grid">
-          <div class="criteria-card"><div class="c-num">01 / КРИТЕРИЙ</div><div class="c-icon">💻</div><div class="c-title">Сложность кода</div><div class="c-desc">Эффективность и грамотность написанной программы</div></div>
-          <div class="criteria-card"><div class="c-num">02 / КРИТЕРИЙ</div><div class="c-icon">🔧</div><div class="c-title">Аккуратность сборки</div><div class="c-desc">Качество монтажа и эстетика устройства</div></div>
-          <div class="criteria-card"><div class="c-num">03 / КРИТЕРИЙ</div><div class="c-icon">💡</div><div class="c-title">Оригинальность идеи</div><div class="c-desc">Креативность и инновационность подхода</div></div>
-          <div class="criteria-card"><div class="c-num">04 / КРИТЕРИЙ</div><div class="c-icon">🎬</div><div class="c-title">Видео-презентация</div><div class="c-desc">Умение ярко рассказать о своём изобретении</div></div>
+          <div class="criteria-card">
+            <div class="c-num">01 / ТЕХНИЧНОСТЬ</div>
+            <span class="c-icon">⚙️</span>
+            <div class="c-title">Инженерная логика</div>
+            <div class="c-desc">Оценивается стабильность работы системы, оптимальность схемотехники и качество сборки Вашего устройства.</div>
+          </div>
+          <div class="criteria-card">
+            <div class="c-num">02 / КОДИНГ</div>
+            <span class="c-icon">⌨️</span>
+            <div class="c-title">Качество кода</div>
+            <div class="c-desc">Проверяется читаемость программного кода, использование функций и грамотная работа с библиотеками.</div>
+          </div>
+          <div class="criteria-card">
+            <div class="c-num">03 / ПОЛЬЗА</div>
+            <span class="c-icon">🌍</span>
+            <div class="c-title">Практическая ценность</div>
+            <div class="c-desc">Учитывается, насколько Ваш проект применим в быту, экологии, производстве или образовании.</div>
+          </div>
+          <div class="criteria-card">
+            <div class="c-num">04 / ПИТЧ</div>
+            <span class="c-icon">📢</span>
+            <div class="c-title">Защита проекта</div>
+            <div class="c-desc">Качество Вашей видео-презентации: умение четко обосновать решение и продемонстрировать функционал.</div>
+          </div>
         </div>
       </div>
     </div>
@@ -515,29 +545,29 @@
 <!-- PRIZES -->
 <section class="prizes-section">
   <div class="container">
-    <div class="eyebrow">Призовой фонд</div>
-    <h2 class="sec-title">Ценные призы для <span>победителей</span></h2>
+    <div class="eyebrow">Поощрения</div>
+    <h2 class="sec-title">Призовой фонд <span>2026</span></h2>
     <div class="prizes-grid">
+      <div class="prize-card second">
+        <div class="p-medal">🥈</div>
+        <div class="p-place">II Место</div>
+        <div class="p-title">Arduino Education Kit</div>
+        <div class="p-sub">Комплексное решение для глубокого изучения робототехники в рамках школьного класса.</div>
+        <div class="p-tag">ПРИЗ ДЛЯ ШКОЛЫ</div>
+      </div>
       <div class="prize-card first">
         <div class="p-medal">🥇</div>
         <div class="p-place">I Место</div>
         <div class="p-title">Ноутбук Acer ChromeBook</div>
-        <div class="p-sub">Персональный приз для победителя</div>
-        <div class="p-tag">+ Arduino Education Starter Kit для класса</div>
-      </div>
-      <div class="prize-card second">
-        <div class="p-medal">🥈</div>
-        <div class="p-place">II Место</div>
-        <div class="p-title">Arduino Education Starter Kit</div>
-        <div class="p-sub">Полный набор для всего класса</div>
-        <div class="p-tag">Для всего класса</div>
+        <div class="p-sub">Профессиональный инструмент для разработки и полный образовательный комплект для школы.</div>
+        <div class="p-tag">ГЛАВНЫЙ ПРИЗ</div>
       </div>
       <div class="prize-card third">
         <div class="p-medal">🥉</div>
         <div class="p-place">III Место</div>
         <div class="p-title">Arduino Student Kit</div>
-        <div class="p-sub">Персональный набор участника</div>
-        <div class="p-tag">Персональный приз</div>
+        <div class="p-sub">Индивидуальный набор для продолжения Ваших технических разработок и экспериментов.</div>
+        <div class="p-tag">ЛИЧНЫЙ ПРИЗ</div>
       </div>
     </div>
   </div>
@@ -546,20 +576,20 @@
 <!-- TIMELINE -->
 <section>
   <div class="container">
-    <div class="eyebrow">Расписание</div>
-    <h2 class="sec-title">Важные <span>даты</span></h2>
+    <div class="eyebrow">График проведения</div>
+    <h2 class="sec-title">Этапы <span>реализации</span></h2>
     <div class="tl-wrap">
       <div class="tl-item">
-        <div class="tl-date"><div class="tl-day">1</div><div class="tl-month">Мая 2026</div></div>
-        <div class="tl-body"><div class="tl-title">Открытие приёма заявок</div><div class="tl-desc">Публикация технических заданий. Участники получают доступ к условиям конкурса и требованиям к проектам.</div></div>
+        <div class="tl-date"><div class="tl-day">01</div><div class="tl-month">Май</div></div>
+        <div class="tl-body"><div class="tl-title">Публикация ТЗ и старт регистрации</div><div class="tl-desc">Все участники получают доступ к официальному техническому заданию и открывается форма приема проектов.</div></div>
       </div>
       <div class="tl-item">
-        <div class="tl-date" style="background:var(--orange);"><div class="tl-day">15</div><div class="tl-month">Мая 2026</div></div>
-        <div class="tl-body"><div class="tl-title">⚡ Дедлайн — последний день подачи</div><div class="tl-desc">Завершение приёма работ. Все заявки, код и видео должны быть загружены до 23:59.</div></div>
+        <div class="tl-date" style="background:var(--orange);"><div class="tl-day">15</div><div class="tl-month">Май</div></div>
+        <div class="tl-body"><div class="tl-title">Завершение приема работ</div><div class="tl-desc">Пожалуйста, убедитесь, что Вы загрузили код и видео до указанного срока. Прием закрывается в 23:59.</div></div>
       </div>
       <div class="tl-item">
-        <div class="tl-date" style="background:#1a1a2e;"><div class="tl-day">1</div><div class="tl-month">Июня 2026</div></div>
-        <div class="tl-body"><div class="tl-title">🏆 Торжественное награждение</div><div class="tl-desc">Оглашение результатов и церемония награждения победителей. Вручение призов.</div></div>
+        <div class="tl-date" style="background:#1a1a2e;"><div class="tl-day">01</div><div class="tl-month">Июнь</div></div>
+        <div class="tl-body"><div class="tl-title">Финал и награждение</div><div class="tl-desc">Объявление имен победителей, экспертный разбор лучших решений и торжественное вручение наград.</div></div>
       </div>
     </div>
   </div>
@@ -568,13 +598,13 @@
 <!-- STEPS -->
 <section class="steps-section">
   <div class="container">
-    <div class="eyebrow">Как участвовать</div>
-    <h2 class="sec-title">4 шага до <span>победы</span></h2>
+    <div class="eyebrow">Руководство участника</div>
+    <h2 class="sec-title">Ваши шаги к <span>успеху</span></h2>
     <div class="steps-grid">
-      <div class="step-card"><div class="s-num">01</div><div class="s-title">Читай техзадание</div><div class="s-desc">Ознакомься с Техническим заданием, которое будет опубликовано 1 мая 2026 года.</div></div>
-      <div class="step-card"><div class="s-num">02</div><div class="s-title">Собери проект</div><div class="s-desc">Используй компоненты из Arduino Starter Kit для реализации своей идеи.</div></div>
-      <div class="step-card"><div class="s-num">03</div><div class="s-title">Код и видео</div><div class="s-desc">Напиши программу и сними короткое видео о работе устройства.</div></div>
-      <div class="step-card"><div class="s-num">04</div><div class="s-title">Подай заявку</div><div class="s-desc">Заполни форму ниже до 15 мая и загрузи все материалы проекта.</div></div>
+      <div class="step-card"><div class="s-num">01</div><div class="s-title">Изучите задачу</div><div class="s-desc">Ознакомьтесь с опубликованными 1 мая спецификациями и требованиями к проекту.</div></div>
+      <div class="step-card"><div class="s-num">02</div><div class="s-title">Соберите схему</div><div class="s-desc">Используйте контроллер Arduino для проектирования и создания Вашего прототипа.</div></div>
+      <div class="step-card"><div class="s-num">03</div><div class="s-title">Запишите видео</div><div class="s-desc">Продемонстрируйте функционал устройства в коротком видео и загрузите его в облачное хранилище.</div></div>
+      <div class="step-card"><div class="s-num">04</div><div class="s-title">Подайте заявку</div><div class="s-desc">Заполните официальную регистрационную форму, указав ссылки на материалы Вашего проекта.</div></div>
     </div>
   </div>
 </section>
@@ -582,36 +612,34 @@
 <!-- FORM -->
 <section id="form" style="background:#fff;">
   <div class="container">
-    <div class="eyebrow">Форма заявки</div>
-    <h2 class="sec-title">Подай заявку на <span>участие</span></h2>
+    <div class="eyebrow">Регистрация</div>
+    <h2 class="sec-title">Подайте заявку на <span>участие</span></h2>
     <div class="form-layout">
       <div>
-        <div class="sidebar-title">Что нужно подготовить</div>
+        <div class="sidebar-title">Что необходимо подготовить</div>
         <ul class="checklist">
-          <li>Название школы, город и регион</li>
-          <li>ФИО ученика или команды</li>
-          <li>Контактный телефон и email</li>
-          <li>Файл кода .ino или ссылка на GitHub</li>
-          <li>Ссылка на видео (YouTube / Google Drive)</li>
-          <li>Фотографии готового устройства</li>
+          <li>Полные реквизиты Вашей школы</li>
+          <li>Программный код с комментариями</li>
+          <li>Ссылку на демонстрационное видео</li>
+          <li>Фотографии процесса сборки</li>
+          <li>Согласование ответственного учителя</li>
         </ul>
         <div class="deadline-box">
-          <div class="dl-label">Дедлайн подачи</div>
-          <div class="dl-date">15 Мая</div>
-          <div class="dl-sub">2026 года, до 23:59</div>
+          <div class="dl-label">Приём заявок до</div>
+          <div class="dl-date">15 МАЯ</div>
+          <div class="dl-sub">Время: Душанбе (GMT+5)</div>
         </div>
       </div>
       <div class="gform-box">
         <div class="gform-bar">
           <div class="gform-bar-left">
             <div class="gform-dot"></div>
-            Форма заявки — Arduino Challenge TJ 2026
+            Форма регистрации — STEMS.KZ / Arduino TJ
           </div>
-          <div class="gform-bar-right">🔒 Защищено Google Forms</div>
+          <div class="gform-bar-right">Безопасное соединение</div>
         </div>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSc4pQlaIo5_wu7cNypTucRuOH5aSpjIw0l-VMBskQ4jdV4_1g/viewform?embedded=true"
-          style="width:100%;min-height:820px;border:none;"
           frameborder="0" marginheight="0" marginwidth="0">
           Загрузка формы...
         </iframe>
@@ -623,16 +651,19 @@
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="f-logo">Arduino <span>Challenge</span> TJ</div>
-      <p class="f-tagline">Национальный конкурс по робототехнике и программированию. Таджикистан, 2026.</p>
+      <div class="f-logo-wrap">
+        <img src="https://stems.kz/wp-content/uploads/2025/05/logo.png" alt="STEMS Logo" class="f-logo-img">
+        <div class="f-title">Arduino <span>Challenge</span></div>
+      </div>
+      <p class="f-tagline">Национальная инициатива по поддержке технического творчества молодежи в Республике Таджикистан.</p>
     </div>
     <div class="f-col">
-      <h4>При поддержке</h4>
-      <p>Европейский Союз<br>ЮНЕСКО<br>STEM Education Initiative</p>
+      <h4>Организаторы</h4>
+      <p>STEMS Education Initiative<br>При содействии Министерства образования<br>Академический год 2025–2026</p>
     </div>
     <div class="f-col">
-      <h4>Контакты</h4>
-      <p>45 пилотных школ Таджикистана<br>Приём заявок: 1–15 мая 2026<br>© 2026 Arduino Challenge TJ</p>
+      <h4>Поддержка</h4>
+      <p>Email: info@stems.kz<br>Telegram: @arduino_tj_2026<br>© 2026 Arduino Challenge Tajikistan</p>
     </div>
   </div>
 </footer>
